@@ -44,13 +44,17 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(
         leading: const Icon(Icons.person_outlined),
+        backgroundColor: Colors.black87,
         title: Container(
           width: MediaQuery.of(context).size.width * 0.6,
           height: MediaQuery.of(context).size.width * 0.6,
           alignment: Alignment.center,
-          child: const Center(
-            child: TextField(
+          child: SizedBox(
+            height: MediaQuery.of(context).size.width * 0.1,
+            child: const TextField(
               decoration: InputDecoration(
+                filled: true,
+                fillColor: Colors.grey,
                 hintText: 'Search',
                 border: InputBorder.none,
               ),
